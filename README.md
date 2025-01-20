@@ -4,6 +4,11 @@
 
 This repository provides a QA (Question-Answering) chatbot application built with Streamlit. The application leverages cutting-edge technologies, such as language models, vector stores, and SQLite caching, to deliver fast and accurate responses to user queries. It supports dynamic data processing from user-provided URLs and maintains a history of interactions.
 
+### `Screenshots`
+![image](https://github.com/user-attachments/assets/f55b4d9d-69c5-4cbc-ae36-bbfaf99b1324)
+![image](https://github.com/user-attachments/assets/738ed078-0864-4bff-b8d9-e13dcbfd2125)
+![image](https://github.com/user-attachments/assets/a6e5fe5c-e838-4597-842d-735e67503745)
+
 ---
 
 ## Features
