@@ -42,6 +42,41 @@ This repository provides a QA (Question-Answering) chatbot application built wit
   - Removes HTML tags, URLs, special characters, and extra spaces.
   - Converts text to uppercase for consistent processing.
 - **Use Case**: Ensures input consistency and prevents redundant calls to the language model.
+---
+
+## Areas for Improvement
+
+1. **Scalability**:
+    - Current SQLite implementation may not scale for high-traffic use cases.
+    - Consider migrating to a distributed database like PostgreSQL or MongoDB.
+
+2. **Error Handling**:
+    - Add more robust error handling for edge cases, such as invalid URLs or API failures.
+
+3. **UI/UX Enhancements**:
+    - Improve the user interface for better navigation and responsiveness.
+    - Add visualizations for query insights and analytics.
+
+4. **Testing**:
+    - Implement unit and integration tests to ensure code reliability and maintainability.
+
+---
+
+## Future Additions
+
+1. **Authentication**:
+    - Introduce user authentication to personalize history and settings.
+
+2. **Advanced Analytics**:
+    - Add dashboards for analyzing usage patterns and system performance.
+
+3. **Multi-LLM Support**:
+    - Allow users to choose between multiple language models dynamically.
+
+4. **Feedback Loop**:
+    - Enable users to provide feedback on answers to refine the model.
+
+---
 
 ---
 # QA Bot Evaluation Framework
@@ -123,6 +158,7 @@ The `plot_metrics` function generates two types of plots:
 
 2. **Retrieval Metrics**:
    - Line plot showing Precision, Recall, and F1-score for each test case.
+
 
 
 ## Note
