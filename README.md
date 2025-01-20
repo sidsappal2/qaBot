@@ -44,25 +44,7 @@ This repository provides a QA (Question-Answering) chatbot application built wit
 - **Use Case**: Ensures input consistency and prevents redundant calls to the language model.
 
 ---
-# README: QA Bot Evaluation Framework
-
-This repository contains an evaluation framework for assessing the performance of a Question-Answering (QA) bot. The framework measures metrics related to retrieval accuracy, answer quality, and response latency. Additionally, it provides tools for visualizing these metrics.
-
----
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Dependencies](#dependencies)
-3. [Functions](#functions)
-4. [Usage](#usage)
-5. [Evaluation Metrics](#evaluation-metrics)
-6. [Visualization](#visualization)
-7. [Example Test Data](#example-test-data)
-
----
-
-## Overview
+# QA Bot Evaluation Framework
 
 This framework evaluates QA bots on the following aspects:
 
@@ -81,13 +63,6 @@ Ensure the following Python libraries are installed before running the framework
 - `rouge_score` for ROUGE evaluation
 - `matplotlib` for plotting evaluation metrics
 
-Install the required libraries using pip:
-
-```bash
-pip install scikit-learn nltk rouge_score matplotlib
-```
-
----
 
 ## Functions
 
@@ -123,8 +98,6 @@ Generates visualizations for evaluation metrics:
 - Response latency histogram.
 - Retrieval metrics (Precision, Recall, F1-score) over test cases.
 
-
-
 ## Evaluation Metrics
 
 ### Retrieval Metrics:
@@ -151,28 +124,6 @@ The `plot_metrics` function generates two types of plots:
 2. **Retrieval Metrics**:
    - Line plot showing Precision, Recall, and F1-score for each test case.
 
----
-
-## Example Test Data
-
-```python
-example_test_data = [
-    {
-        "question": "What is the capital of France?",
-        "expected_answer": "Paris",
-        "relevant_sources": ["source1"]
-    },
-    {
-        "question": "Who wrote '1984'?",
-        "expected_answer": "George Orwell",
-        "relevant_sources": ["source2", "source3"]
-    }
-]
-
-evaluate_bot(example_test_data)
-```
-
----
 
 ## Note
 - This framework assumes that your QA bot integrates seamlessly with the `ask_question` function. Modify this function as per your bot's API or structure.
